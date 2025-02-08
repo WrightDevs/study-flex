@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="LFX Academia helps students master their exams with confidence. Get access to past questions, mock tests, and study resources for JAMB and university exams.">
+<meta name="keywords" content="JAMB, WAEC, university exams, mock tests, study resources, online learning, Nigeria education">
+<meta name="author" content="LFX Academia">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="LFX Academia - Master Your Exams with Confidence">
+<meta property="og:description" content="Prepare for your JAMB and university exams with past questions, mock tests, and study resources.">
+<meta property="og:image" content="https://lfxedu.vercel.app/lfx.jpeg"> 
+<meta property="og:url" content="https://lfxedu.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LFX Academia">
+  <link rel="shortcut icon" href="lfx.jpeg" type="image/x-icon" /> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFX Academia - Master Your Exams with Confidence</title>
+   
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        /* Fullscreen Particle Background */
+        #particles-js {
+            position: fixed; /* Ensure the particles stay fixed in the background */
+            top: 0;
+            left: 0;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            z-index: -1; /* Send the particles to the background */
+            pointer-events: none; /* Prevent the particles from interfering with user interaction */
+        }
+
+        #three-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2; /* Send the 3D background further behind */
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div> <!-- Particle container -->
+    <div id="three-background"></div> <!-- Three.js background container -->
+<header>
+    <nav>
+        <div class="logo"><p id="partOne" style="color: white;">LFX</p> Academia</div>
+        <ul class="nav-links" id="nav-links">
+           <div class="close-menu" id="close-menu">&times;</div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#subjects">Subjects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        
+    </nav>
+</header>
+
+    <main>
+        <section id="home" class="hero" style="color: white">
+            <h1>Master Your Exams with Confidence</h1>
+            <p>Get access to past questions, mock tests, and study resources to ace your JAMB and university exams.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>Real Exam Simulations</h3>
+                    <p>Practice with past questions in a real exam environment.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>AI-Powered Study Guide</h3>
+                    <p>Get personalized recommendations based on your progress.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Performance Tracking</h3>
+                    <p>Analyze your strengths and weaknesses with detailed reports.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Sign Up</h3>
+                    <p>Create a free account to access our learning resources.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Choose a Subject</h3>
+                    <p>Select from a wide range of subjects and study materials.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Take Mock Exams</h3>
+                    <p>Simulate real exam conditions and improve your timing.</p>
+                </div>
+                <div class="step">
+                    <h3>4. Track Your Progress</h3>
+                    <p>Get insights and personalized study recommendations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subjects">
+            <h2>Subjects & Resources</h2>
+            <ul>
+                <li>📖 Mathematics</li>
+                <li>🧪 Chemistry</li>
+                <li>🧬 Biology</li>
+                <li>💻 Computer Science</li>
+                <li>🌎 Geography</li>
+                <li>📖 English Language</li>
+                <li>🧠 Philosophy</li>
+            </ul>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"LFX Academia helped me score **320 in my JAMB**! The mock exams were just like the real thing."</p>
+                    <span>- John A.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I struggled with **time management**, but the timed practice sessions really helped me finish my exams faster."</p>
+                    <span>- Sarah K.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The **AI-powered recommendations** helped me focus on weak areas. I finally understood Calculus!"</p>
+                    <span>- Michael T.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>📌 Is LFX Academia free?</h3>
+                    <p>Yes! We offer free access to past questions and mock tests. Some premium features require a subscription.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>📌 Can I access LFX Academia on my phone?</h3>
+                    <p>Absolutely! Our platform is fully mobile-friendly.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>📌 How do I track my progress?</h3>
+                    <p>We provide a detailed dashboard where you can see your scores, strengths, and areas to improve.</p>
+                </div>
+            </div>
+        </section>
+<div class="applink">
+          <img src="google-play-badge-logo-svgrepo-com.svg" alt="" />
+          <img src="app-store-svgrepo-com.svg" alt="" />
+        </div>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i data-lucide="mail"></i>
+                    <p>itzwright212@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="phone"></i>
+                    <p>+2347089464098</p>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="map-pin"></i>
+                    <p>Owerri, Nigeria</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="applink">
+          <img src="google-play-badge-logo-svgrepo-com.svg" alt="" />
+          <img src="app-store-svgrepo-com.svg" alt="" />
+        </div>
+        <div class="copyright">
+            © 2025 LFX Academia. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Chatbot Button-->
+    <div id="chatbot-btn" class="chatbot-btn">
+    <i class="fas fa-comments"></i>
+</div>
+
+    <!-- Chatbot Window-->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <span>Chat with us</span>
+            <button id="close-chatbot" class="close-btn">X</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+        </div>
+        <input type="text" id="chat-input" placeholder="Type a message..." />
+        <br />
+        <button class="cta-button" type="submit" style="border: none; position: absolute; right: 0">Send</button>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script>
+        gsap.from(".hero h1", { opacity: 0, y: -50, duration: 1, delay: 0.5 });
+        gsap.from(".hero p", { opacity: 0, y: -30, duration: 1, delay: 0.8 });
+        gsap.from(".cta-button", { opacity: 0, y: -20, duration: 1, delay: 1.1 });
+    </script>
+
+    <script>
+        // Initialize particles.js with connected particles
+        particlesJS('particles-js', {
+            particles: {
+                number: { 
+                    value: 200, // Increase number of particles
+                    density: { enable: true, value_area: 800 } // Increase density for more particles
+                },
+                color: { value: '#ffffff' }, // White color for particles
+                shape: {
+                    type: 'circle', // Circle shape for particles
+                    stroke: {
+                        width: 0, // No stroke around particles
+                        color: '#ffffff' // Stroke color for particles
+                    }
+                },
+                opacity: {
+                    value: 0.5, // Particles will be semi-transparent
+                    random: true, // Particles will have random opacity
+                    anim: {
+                        enable: true, // Animates the opacity
+                        speed: 1, // Speed of opacity animation
+                        opacity_min: 0.1, // Minimum opacity
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 5, // Size of particles
+                    random: true, // Random particle size
+                    anim: {
+                        enable: true, // Animates the size
+                        speed: 1, // Speed of size animation
+                        size_min: 0.1, // Minimum particle size
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true, // Enable particle links
+                    distance: 150, // Distance for lines to appear
+                    color: '#ffffff', // Line color
+                    opacity: 0.4, // Line opacity
+                    width: 1 // Line width
+                },
+                move: {
+                    enable: true, // Particles will move
+                    speed: 2, // Movement speed
+                    direction: 'none', // No specific direction
+                    random: true, // Random movement direction
+                    straight: false, // No straight movement
+                    out_mode: 'out', // Particles will exit the viewport
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas', // Interaction detection on the canvas
+                events: {
+                    onhover: {
+                        enable: true, // Enable hover interactions
+                        mode: 'repulse' // Particles will repel when hovered
+                    },
+                    onclick: {
+                        enable: true, // Enable click interactions
+                        mode: 'push' // Add more particles on click
+                    }
+                },
+                modes: {
+                    repulse: {
+                        distance: 100, // Repulsion distance on hover
+                        duration: 0.4 // Duration of repulsion
+                    },
+                    push: {
+                        particles_nb: 4 // Number of particles to add on click
+                    }
+                }
+            },
+            retina_detect: true // Enable retina support
+        });
+
+        // Set up three.js background
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('three-background').appendChild(renderer.domElement);
+
+        // Create a rotating cube in the center
+        const geometry = new THREE.BoxGeometry(1, 1, 1);
+        const material = new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0 });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        // Position the camera
+        camera.position.z = 5;
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Rotate the cube for a dynamic background effect
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // Responsive design: Resize event for particles and three.js adjustments
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+
+        // Chatbot functionality
+        document.getElementById('chatbot-btn').addEventListener('click', () => {
+            document.getElementById('chatbot').style.display = 'block';
+        });
+
+        document.getElementById('close-chatbot').addEventListener('click', () => {
+            document.getElementById('chatbot').style.display = 'none';
+        });
+
+        // Simple chatbot message handling
+        const chatbotMessages = document.getElementById('chatbot-messages');
+        const chatInput = document.getElementById('chat-input');
+
+        chatInput.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' && chatInput.value.trim()) {
+                const userMessage = document.createElement('div');
+                userMessage.classList.add('message', 'user-message');
+                userMessage.innerHTML = `<p>${chatInput.value}</p>`;
+                chatbotMessages.appendChild(userMessage);
+                chatInput.value = '';
+
+                setTimeout(() => {
+                    const botResponse = document.createElement('div');
+                    botResponse.classList.add('message', 'bot-message');
+                    botResponse.innerHTML = `<p>Thanks for reaching out! How can I help you further?</p>`;
+                    chatbotMessages.appendChild(botResponse);
+                }, 1000);
+            }
+        });
+        // Hamburger Menu Functionality
+const hamburger = document.getElementById('hamburger-menu');
+const navLinks = document.getElementById('nav-links');
+const closeMenu = document.getElementById('close-menu');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.add('active'); // Show menu
+});
+
+closeMenu.addEventListener('click', () => {
+    navLinks.classList.remove('active'); // Hide menu
+});
+// Tawk.to Live Chat Integration
+(function() {
+  var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+  var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = "https://embed.tawk.to/67a444c63a842732607a58e1/1ijcqpau9";
+  s1.charset = "UTF-8";
+  s1.setAttribute("crossorigin", "*");
+  s0.parentNode.insertBefore(s1, s0);
+})();
+    </script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
+
